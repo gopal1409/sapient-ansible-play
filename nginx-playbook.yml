@@ -30,7 +30,7 @@
         state: enabled 
       when: ansible_distribution == "RedHat"
       notify: Reload Firewalld 
-  handler:
+  handlers:
     - name: check http service
       uri: http://{{ ansible_default_ipv4.address }}
       status_code: 200

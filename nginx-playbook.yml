@@ -14,3 +14,7 @@
         update_cache: yes
         state: present #present or absent
       when: ansible_distribution == "RedHat"
+    - name: install nginx
+      package: 
+        name: nginx 
+        state: latest

@@ -1,0 +1,14 @@
+---
+#ansy playbook start with three dash
+-
+###this minus in yaml indicate a list of items. the play contains a list of play
+  hosts: client
+  vars:
+    motd_redhat: "welcome to redhat linux\n"
+  
+  tasks:
+    - name: configure a motd message of the day in redhat
+      copy:
+        content: "{{motd_redhat}}"
+        dest: /etc/motd
+      

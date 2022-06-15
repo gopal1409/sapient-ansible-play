@@ -9,7 +9,7 @@
   
   tasks:
     - name: install epel release
-      yum: 
+      dnf: 
         name: epel-release
         update_cache: yes
         state: latest #present or absent

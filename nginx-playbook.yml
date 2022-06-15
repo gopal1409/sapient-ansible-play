@@ -32,8 +32,9 @@
       notify: Reload Firewalld 
   handlers:
     - name: check http service
-      uri: http://{{ ansible_default_ipv4.address }}
-      status_code: 200
+      uri: 
+        url: http://{{ ansible_default_ipv4.address }}
+        status_code: 200
     - name: Reload Firewalld
       service:
         name: firewalld

@@ -18,3 +18,8 @@
       package: 
         name: nginx 
         state: latest
+    - name: restart nginx server
+      service:
+        name: nginx 
+        state: restarted
+  

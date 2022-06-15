@@ -8,7 +8,8 @@
     motd_ubuntu: "welcome to ubuntu linux \n"
   
   tasks:
-    - name: install epel release
+    - name: install epel release 
+    #epel enterprise linux it is being specially created for redhat based system
       dnf: 
         name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
         update_cache: yes
@@ -16,14 +17,17 @@
       when: ansible_distribution == "RedHat"
     - name: install nginx
       package: 
+      #this module autmatically identify the os and run the installation command accoring to your os
         name: nginx 
         state: latest
     - name: restart nginx server
       service:
+      #systemctl restart httpd service
         name: nginx 
         state: restarted
       notify: check http service 
     - name: add port in firewalld
+    #by default when you install redhat it get installed with firewalld a inbuilt firewall in your redhat based system
       firewalld:
         service: http 
         permanent: true 

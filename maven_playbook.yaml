@@ -63,7 +63,7 @@
     - name: check maven.sh file exist or not
       stat:
         path: /etc/profile.d/maven.sh
-        register: st
+      register: st
     - name: diplay the file exist
       debug: 
         msg: this file exist "{{ st }}"

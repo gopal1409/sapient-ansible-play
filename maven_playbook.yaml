@@ -27,6 +27,7 @@
       ansible.builtin.unarchive:
         src: /opt/apache-maven-3.8.6-bin.tar.gz
         dest: /opt/
+        remote_src: yes
     - name: symbolic link for apache maven
       file: 
         src: /opt/apache-maven-3.8.6

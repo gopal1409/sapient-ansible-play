@@ -79,9 +79,4 @@
       service:
         name: firewalld
         state: reloaded    
-    - name: check storage
-      shell: "free -h"
-      register: storage
-    - name: diplay the storage
-      debug: 
-        msg: "{{ storage }}"
+    

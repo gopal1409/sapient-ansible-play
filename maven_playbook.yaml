@@ -54,4 +54,10 @@
     - name: display maven version 
       debug:
         msg: "{{ system_maven }}"
+    - name: check storage
+      shell: "free -h"
+      register: storage
+    - name: diplay the storage
+      debug: 
+        msg: "{{ storage }}"
       

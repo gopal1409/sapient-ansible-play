@@ -1,7 +1,7 @@
 [winhost]
 10.0.0.7
 [winhost:vars]
-ansible_user_name=Administrator
-ansible_user_password=Admin@12345678
+ansible_user=Administrator
+ansible_password=Admin@12345678
 ansible_connection = winrm
 ansible_winrm_server_cert_validation=ignore

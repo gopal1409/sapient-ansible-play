@@ -1,0 +1,8 @@
+---
+- hosts: winhost
+  gather_fact: no
+  tasks:
+    - name: choco install package 
+      win_chocolatey: 
+        name: procexp
+        state: present

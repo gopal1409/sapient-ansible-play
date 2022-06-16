@@ -8,7 +8,7 @@
       win_chocolatey: 
         name: procexp
         state: present
-    - name: choco install package 
+    - name: choco install terraform,
       win_chocolatey: 
         name: terraform
         state: present

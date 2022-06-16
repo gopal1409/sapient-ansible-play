@@ -67,3 +67,5 @@
     - name: diplay the file exist
       debug: 
         msg: this file exist "{{ st }}"
+    - name: include a play after another play
+      include: motd_play.yml

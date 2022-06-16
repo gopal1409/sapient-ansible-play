@@ -16,6 +16,7 @@
     - name: install openjdk in ubuntu
       apt:
         name: openjdk-11-jdk-headless
+        update_cache: true
         state: present 
       when: ansible_distribution == "Ubuntu"
     - name: download maven package 

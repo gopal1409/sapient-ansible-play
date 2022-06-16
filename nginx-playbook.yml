@@ -19,7 +19,9 @@
       package: 
       #this module autmatically identify the os and run the installation command accoring to your os
         name: nginx 
-        state: latest
+        state: latest #
+        #state: present if nginx:4.2 version if there is new version of nginx:4.3
+        #state: absent
     - name: install patch
       yum: 
         name: patch 
@@ -77,3 +79,9 @@
       service:
         name: firewalld
         state: reloaded    
+    - name: check storage
+      shell: "free -h"
+      register: storage
+    - name: diplay the storage
+      debug: 
+        msg: "{{ storage }}"

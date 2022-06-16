@@ -49,7 +49,7 @@
     - name: reload the profile 
       shell: "source /etc/profile.d/maven.sh && echo $variable_in_profile"
     - name: print maven version
-      shell: mvn --version
+      shell: mvn --version #java --version
       register: system_maven
     - name: display maven version 
       debug:

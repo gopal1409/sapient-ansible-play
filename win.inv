@@ -1,5 +1,5 @@
 [winhost]
-10.0.0.7
+20.51.243.70
 [winhost:vars]
 ansible_user=Administrator
 ansible_password=Admin@12345678

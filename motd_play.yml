@@ -7,7 +7,7 @@
    # motd_redhat: "welcome to redhat linux\n"
     #motd_ubuntu: "welcome to ubuntu linux \n"
   
-  tasks:
+  #tasks:
     - name: configure a motd message of the day in redhat
       copy: #dictionary
         content: "{{motd_redhat}}"

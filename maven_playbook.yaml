@@ -36,7 +36,7 @@
     - name: create maven.sh
       ansible.builtin.file:
         path: /etc/profile.d/maven.sh
-        state: present 
+        state: touch
         mode: u+rwx,g+rwx,o+rwx
     - name: Update maven.sh
       lineinfile:

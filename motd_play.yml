@@ -23,11 +23,11 @@
       when: ansible_distribution == "Ubuntu"
 #how ansible will know that this is an ubuntu system or this is an redhat system
       #every task will execute against every inventory
-  handlers:
-    - name: MOTD change in "RedHat"
-      debug:
-        msg: The Motd has changed in redhat
-    - name: MOTD change in "Ubuntu"
-      debug:
-        msg: The Motd has changed in ubuntu
+  #handlers:
+   # - name: MOTD change in "RedHat"
+    #  debug:
+     #   msg: The Motd has changed in redhat
+    #- name: MOTD change in "Ubuntu"
+     # debug:
+      #  msg: The Motd has changed in ubuntu
     

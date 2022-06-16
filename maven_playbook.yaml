@@ -48,6 +48,4 @@
       - 'export PATH=${M2_HOME}/bin:${PATH}'
     - name: reload the profile 
       shell: "source /etc/profile/maven.sh && echo $variable_in_profile"
-'
-
       

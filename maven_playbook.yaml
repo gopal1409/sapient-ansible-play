@@ -47,7 +47,7 @@
       - 'export M2_HOME=/opt/maven'
       - 'export PATH=${M2_HOME}/bin:${PATH}'
     - name: reload the profile 
-      shell: shell: "source /etc/profile/maven.sh && echo $variable_in_profile"
+      shell: "source /etc/profile/maven.sh && echo $variable_in_profile"
 '
 
       

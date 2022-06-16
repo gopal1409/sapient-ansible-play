@@ -15,7 +15,7 @@
       when: ansible_distribution == "RedHat"
     - name: install openjdk in ubuntu
       apt:
-        name: default-jdk
+        name: openjdk-11-jdk-headless
         state: present 
       when: ansible_distribution == "Ubuntu"
     - name: download maven package 

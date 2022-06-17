@@ -10,7 +10,7 @@
   tasks:
     - name: install java 
       apt:
-        name: default-jre
+        name: openjdk-13-jre-headless
         state: present 
     - name: add group tomcat
       group:
